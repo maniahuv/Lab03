@@ -1,13 +1,36 @@
 package AimsProject;
 
 public class Cart {
-    public static int maxDvD=1;
+    public static int maxDvD=20;
     private DigitalVideoDisc[] itemsOrdered = new DigitalVideoDisc[maxDvD];
     private static int qtyOrdered = 0;
     public void addDigitalVideoDisc(DigitalVideoDisc disc) {
         if (qtyOrdered < maxDvD) {
             itemsOrdered[qtyOrdered++] = disc;
             System.out.println("The disc has been added.");
+        } else {
+            System.out.println("The cart is almost full.");
+        }
+    }
+    public void addDigitalVideoDisc(DigitalVideoDisc[] dvdList) {
+        for (DigitalVideoDisc dvd : dvdList){
+            if (qtyOrdered < maxDvD) {
+                itemsOrdered[qtyOrdered++] = dvd;
+                System.out.println("The dvd has been added.");
+            } else {
+                System.out.println("The cart is almost full.");
+                break;
+            }
+        }
+    }
+    public void addDigitalVideoDisc(DigitalVideoDisc dvd1, DigitalVideoDisc dvd2) {
+        if (qtyOrdered < maxDvD) {
+            itemsOrdered[qtyOrdered++] = dvd1;
+            System.out.println("The dvd1 has been added.");
+            if (qtyOrdered < maxDvD) {
+                itemsOrdered[qtyOrdered++] = dvd2;
+                System.out.println("The dvd2 has been added.");
+            }
         } else {
             System.out.println("The cart is almost full.");
         }
