@@ -12,13 +12,15 @@ public class TestPassingParameter {
         changeTitle(jungleDVD, cinderellaDVD.getTitle());
         System.out.println("jungle dvd title: " + jungleDVD.getTitle());
     }
-    public static void swap(Object o1, Object o2) {  // truyền tham chiếu và đối tượng không thay đổi
+
+    public static void swap(Object o1, Object o2) {  
         DigitalVideoDisc dvd1 = (DigitalVideoDisc) o1;
         DigitalVideoDisc dvd2 = (DigitalVideoDisc) o2;
         String tmp = dvd1.getTitle();
         dvd1.setTitle(dvd2.getTitle());
-        dvd2.setTitle(dvd1.getTitle());
+        dvd2.setTitle(tmp);
     }
+
     public static void changeTitle(DigitalVideoDisc dvd, String title){ //truyền giá trị dvd và thay đổi title, còn truyền tham chiếu không làm thay đổi giá trị
         String oldTitle=dvd.getTitle(); //jungle
         dvd.setTitle(title);    //jungle.title="cinderella"

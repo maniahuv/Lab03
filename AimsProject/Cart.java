@@ -64,7 +64,7 @@ public class Cart {
         } else {
             for (int i = 0; i < qtyOrdered; i++) {
                 DigitalVideoDisc disc = itemsOrdered[i];
-                System.out.printf("%d. Title: %s, Category: %s, Director: %s, Length: %d min, Cost: $%.2f%n", i + 1, disc.getTitle(), disc.getCategory(), disc.getDirector() != null ? disc.getDirector() : "N/A", disc.getLength(), disc.getCost());
+                System.out.printf("%d. Title: %s, Category: %s, Director: %s, Length: %d min, Cost: $%.2f%n", disc.getId(), disc.getTitle(), disc.getCategory(), disc.getDirector() != null ? disc.getDirector() : "N/A", disc.getLength(), disc.getCost());
             }
         }
     }
