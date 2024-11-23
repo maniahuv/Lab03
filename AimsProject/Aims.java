@@ -13,6 +13,8 @@ public class Aims {
         DigitalVideoDisc dvd8 = new DigitalVideoDisc("Bladin", "Animation", null, 0, 18.99f);
         DigitalVideoDisc[] dvdList={dvd1,dvd2,dvd3,dvd4,dvd5,dvd6,dvd7,dvd8};
         anOrder.addDigitalVideoDisc(dvdList);
-        anOrder.displayCart();
+        anOrder.searchById(5);
+        anOrder.searchByTitle("Alddin");
+        
     }
 }
