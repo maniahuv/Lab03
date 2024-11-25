@@ -1,4 +1,3 @@
-package AimsProject;
 
 public class Cart {
     public static int maxDvD=20;
