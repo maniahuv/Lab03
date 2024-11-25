@@ -1,5 +1,3 @@
-import AimsProject.Cart;
-import AimsProject.DigitalVideoDisc;
 
 public class CartTest {
     public static void main(String[] args) {

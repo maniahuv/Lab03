@@ -1,4 +1,4 @@
-package AimsProject;
+
 
 public class DigitalVideoDisc{
     private int id;
