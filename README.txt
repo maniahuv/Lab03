@@ -1,1 +1,1 @@
-chạ có gì đệ xem
+Thêm và sửa một số lỗi
