@@ -16,7 +16,7 @@ public class NoGarbage {
                 sb.append((char) b);  
             }
             String outputString = sb.toString();  
-            long endTime = System.currentTimeMillis();
+            long endTime = System.currentTimeMillis()
             System.out.println(endTime - startTime);
         } catch (IOException e) {
             System.out.println("Error reading file: " + e.getMessage());
